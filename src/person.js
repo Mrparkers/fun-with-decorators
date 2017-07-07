@@ -1,4 +1,4 @@
-import {type, required, maxLength} from './decorators';
+import {type, required, maxLength} from './decorators/index';
 
 export default class Person {
 
@@ -7,9 +7,9 @@ export default class Person {
         this._lastName = lastName;
     }
 
-    @maxLength(10)
     @type('string')
-    @required
+    @required()
+    @maxLength(10)
     get firstName() { return this._firstName; }
 
     get lastName() { return this._lastName; }
