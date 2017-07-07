@@ -1,4 +1,4 @@
-import {type, required, maxLength} from './decorators/index';
+import {type, required, maxLength} from './decorators';
 
 export default class Person {
 
